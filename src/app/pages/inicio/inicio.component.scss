@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/*font-family: 'PT Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// font-family: 'Quicksand', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+/*font-family: 'Mukta', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+/*font-family: 'Noto Sans', sans-serif;*/
+
+*{
+  box-sizing: border-box;
+}
+
+nav,
+main {
+    width: 100%;
+    .container-top{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(236, 236, 236);
+        border-bottom: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .card{
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            border: 1px solid rgb(181, 181, 181);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Mukta', sans-serif;
+            font-weight: bold;
+            padding: 10px;
+
+            .square{
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+                border: 1px solid black;
+                margin: auto;
+            }
+        }
+
+        .card1{
+            &:hover{
+            transition: all 2s;
+
+                .square{
+                    transition: all 2s;
+                    transform: rotate(360deg);
+                    background-color: rgb(89, 143, 191);
+                }
+            }
+        }
+        .card2{
+            &:hover{
+            transition: all 2s;
+                .square{
+                    transition: all 2s;
+                    transform: scale(1.1);
+                    background-color: rgb(89, 143, 191);
+                }
+            }
+        }
+        .card3{
+            &:hover{
+                transition: all 2s;
+                .square{
+                    transition: all 2s;
+                    transform: rotate(360deg) scale(1.5);
+                    background-color: rgb(89, 143, 191);
+                }
+            }
+        }
+    }
+}
+
+nav {
+    height: 50px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .circle-animation{
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        margin: 0px 10px;
+        animation: 3s circle-animation-background linear infinite;
+    }
+
+    .space-fonts {
+        font-size: 20px;
+        margin: 0px 3px;
+        font-family: 'Mukta', sans-serif;
+        font-weight: bold;
+
+    }
+
+    .font1 {
+        @extend .space-fonts;
+        // font-family: 'PT Sans', sans-serif;
+        animation: 0.6s top-slide;
+    }
+
+    .font2 {
+        @extend .space-fonts;
+        // font-family: 'Quicksand', sans-serif;
+        
+        animation: 0.6s left-slide;
+    }
+
+    .font3 {
+        @extend .space-fonts;
+        // font-family: 'Mukta', sans-serif;
+        animation: 0.6s bottom-slide;
+    }
+
+    .font4 {
+        @extend .space-fonts;
+        // font-family: 'Noto Sans', sans-serif;
+        animation: 0.6s right-slide;
+        color:rgb(67, 152, 185);
+    }
+}
+
+@keyframes circle-animation-background{
+    0%{
+      background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: rgb(13, 255, 0);
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+@keyframes pop{
+    0%{
+      background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: rgb(13, 255, 0);
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+@keyframes top-slide{
+ 0%{
+   transform: translateY(100%);
+   opacity: 0;
+ }
+ 100%{
+    transform: translateY(0%);
+    opacity: 1;
+ }
+}
+
+@keyframes bottom-slide{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100%{
+         transform: translateY(0%);
+         opacity: 1;
+      }
+}
+@keyframes left-slide{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100%{
+         transform: translateY(0%);
+         opacity: 1;
+      }
+}
+@keyframes right-slide{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100%{
+         transform: translateX(0%);
+         opacity: 1;
+      }
+}
