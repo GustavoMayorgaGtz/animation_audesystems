@@ -1,23 +1,71 @@
-<nav>
-    <div class="circle-animation"></div>
-    <span class="font1">Animaciones</span>
-    <span class="font2">by</span>
-    <span class="font3">Aude</span>
-    <span class="font4">Systems</span>
-</nav>
-<main>
-    <div class="container-top">
-        <div class="card1 card">
-            <span class="title">Rotate</span>
-            <div class="square"></div>
+
+<div class="primary-container" (scroll)="ScrollAnimation($event, p1, p2)">
+    <nav>
+        <div class="circle-animation"></div>
+        <span class="font1">Animaciones</span>
+        <span class="font2">by</span>
+        <span class="font3">Aude</span>
+        <span class="font4">Systems</span>
+    </nav>
+    <main>
+        <div class="container-top">
+            <div class="card1 card">
+                <span class="title">Rotate</span>
+                <div class="square"></div>
+            </div>
+            <div class="card2 card">
+                <span class="title">Scale</span>
+                <div class="square"></div>
+            </div>
+            <div class="card3 card">
+                <span class="title">Both</span>
+                <div class="square"></div>
+            </div>
         </div>
-        <div class="card2 card">
-            <span class="title">Scale</span>
-            <div class="square"></div>
+        <div class="container-scroll">
+            <span class="title">Animacion usando el scroll event</span>
+            <p #p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores voluptatum iure repellat omnis
+                ullam
+                fugit quibusdam voluptatem minima ab corporis, quia pariatur non ipsa ut neque nisi eum repellendus.
+                Asperiores facere adipisci voluptatem sint eum debitis, suscipit perspiciatis alias reprehenderit
+                impedit
+                dolor ad dolorem error, eos et eligendi cum totam earum enim hic assumenda animi. Earum possimus numquam
+                ipsa.
+                Et ad consequatur, libero sit dignissimos assumenda odit, quis inventore natus dolore debitis, facilis
+                veritatis vel ullam aliquam vitae repudiandae optio. Incidunt dignissimos ut autem consectetur nemo ipsa
+                perferendis in!
+                Explicabo quos eos recusandae veniam laboriosam aperiam impedit atque error nesciunt exercitationem,
+                dolores
+                cumque. Impedit perferendis aperiam vel iste perspiciatis assumenda. Necessitatibus aut qui dignissimos.
+                Numquam qui laudantium error dolores.
+                Maxime dolore provident deleniti tempora sunt neque ducimus tenetur hic. Inventore vitae at magni vel
+                quas
+                nihil distinctio in, cumque dolore, consequuntur expedita eum praesentium omnis assumenda autem.
+                Molestias,
+                libero?
+            </p>
+            <br>
+            <h3>Lorem Subtitle</h3>
+            <p #p2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolores voluptatum iure repellat omnis
+                ullam
+                fugit quibusdam voluptatem minima ab corporis, quia pariatur non ipsa ut neque nisi eum repellendus.
+                Asperiores facere adipisci voluptatem sint eum debitis, suscipit perspiciatis alias reprehenderit
+                impedit
+                dolor ad dolorem error, eos et eligendi cum totam earum enim hic assumenda animi. Earum possimus numquam
+                ipsa.
+                Et ad consequatur, libero sit dignissimos assumenda odit, quis inventore natus dolore debitis, facilis
+                veritatis vel ullam aliquam vitae repudiandae optio. Incidunt dignissimos ut autem consectetur nemo ipsa
+                perferendis in!
+                Explicabo quos eos recusandae veniam laboriosam aperiam impedit atque error nesciunt exercitationem,
+                dolores
+                cumque. Impedit perferendis aperiam vel iste perspiciatis assumenda. Necessitatibus aut qui dignissimos.
+                Numquam qui laudantium error dolores.
+                Maxime dolore provident deleniti tempora sunt neque ducimus tenetur hic. Inventore vitae at magni vel
+                quas
+                nihil distinctio in, cumque dolore, consequuntur expedita eum praesentium omnis assumenda autem.
+                Molestias,
+                libero?
+            </p>
         </div>
-        <div class="card3 card">
-            <span class="title">Both</span>
-            <div class="square"></div>
-        </div>
-    </div>
-</main>
+    </main>
+</div>
